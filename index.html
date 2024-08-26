@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Proyectos SIG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Proyectos Colaborativos de SIG</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Lista de Proyectos</h2>
+            <ul id="project-list"></ul>
+        </section>
+        <section>
+            <h2>Agregar Nuevo Proyecto</h2>
+            <form id="project-form">
+                <input type="text" id="project-name" placeholder="Nombre del Proyecto" required>
+                <textarea id="project-description" placeholder="Descripción del Proyecto" required></textarea>
+                <button type="submit">Agregar Proyecto</button>
+            </form>
+        </section>
+        <section>
+            <h2>Agregar Nueva Tarea</h2>
+            <form id="task-form">
+                <input type="text" id="task-name" placeholder="Nombre de la Tarea" required>
+                <textarea id="task-description" placeholder="Descripción de la Tarea" required></textarea>
+                <input type="text" id="project-id" placeholder="ID del Proyecto" required>
+                <button type="submit">Agregar Tarea</button>
+            </form>
+        </section>
+        <section>
+            <h2>Agregar Nuevo Comentario</h2>
+            <form id="comment-form">
+                <input type="text" id="comment-text" placeholder="Texto del Comentario" required>
+                <input type="text" id="task-id" placeholder="ID de la Tarea" required>
+                <button type="submit">Agregar Comentario</button>
+            </form>
+        </section>
+        <section>
+            <h2>Agregar Nuevo Documento</h2>
+            <form id="document-form">
+                <input type="text" id="document-name" placeholder="Nombre del Documento" required>
+                <input type="text" id="document-url" placeholder="URL del Documento" required>
+                <input type="text" id="document-project-id" placeholder="ID del Proyecto" required>
+                <button type="submit">Agregar Documento</button>
+            </form>
+        </section>
+        <section>
+            <h2>Agregar Nuevo Rol</h2>
+            <form id="role-form">
+                <input type="text" id="role-name" placeholder="Nombre del Rol" required>
+                <button type="submit">Agregar Rol</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gestión de Proyectos SIG. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
